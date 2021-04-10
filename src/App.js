@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./Components/About";
@@ -11,6 +11,7 @@ const App = () => {
     <>
       <Router>
         <Header />
+
         <div>
           <Switch>
             <Route exact path="/">
